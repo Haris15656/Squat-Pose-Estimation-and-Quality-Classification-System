@@ -116,36 +116,4 @@ python src/infer_realtime.py --video path/to/your/video.mp4
 
 ---
 
-## 🚀 GitHub Upload Instructions
 
-To push this repository to GitHub, follow these step-by-step instructions.
-
-### 1. Initialize Git Repo
-If you haven't initialized Git in this folder yet, run:
-```bash
-git init
-```
-
-### 2. Verify `.gitignore`
-Make sure you have a `.gitignore` file in your root folder. This prevents committing large local environments or temporary files. A standard `.gitignore` has been created for you, which ignores:
-- Virtual environments (`.venv/`)
-- Temporary CSV data exports (`data/extracted_landmarks/`, `data/features/`, `data/training/`)
-- Local caches (`__pycache__/`)
-- Large generated model files (`models/*.pkl`)
-
-### 3. Stage and Commit Files
-Add the codebase to your Git staging area and make your initial commit:
-```bash
-git add .
-git commit -m "Initial commit: Squat Pose Estimation pipeline"
-```
-
-### 4. Link to GitHub and Push
-1. Go to [GitHub](https://github.com/) and create a new repository (do **not** check "Initialize this repository with a README" since we already have one).
-2. Copy your repository's URL (looks like `https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git`).
-3. Run the following commands in your terminal (replacing the URL with yours):
-   ```bash
-   git branch -M main
-   git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
-   git push -u origin main
-   ```
